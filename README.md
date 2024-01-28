@@ -1,2 +1,2 @@
-# javascript-completo-origamid
-✨ My JavaScript studies and exercises repository.  
+# 📄 Complete JavaScript Course
+🎈 My JavaScript studies and exercises repository.
