@@ -1,13 +1,30 @@
+// Elements Selection
+const animalSection = document.getElementById("animais");
+
+// getElementsByClassName is dinamic, returns a HTMLCOLLECTION
+// querySelectorAll is static, returns a NODELIST
+const ancoras = document.getElementsByClassName("ancora");
+const ancs = document.querySelectorAll(".ancora");
+
 // Exercises in Portuguese:
-// Retorne o url da página atual utilizando o objeto window
-console.log(window.location.href);
+// Retorne no console todas as imagens do site
+const imagens = document.getElementsByTagName("img");
+console.log(imagens);
 
-// Seleciona o primeiro elemento da página que possua a classe ativo
-const primeiroAtivo = document.querySelector(".ativo");
-console.log(primeiroAtivo);
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const imagens2 = document.querySelectorAll('img[src ^= "assets/imagem"]');
+console.log(imagens2);
 
-// Retorne a linguagem do navegador
-console.log(navigator.language);
+// Selecione todos os links internos (onde o href começa com #)
+const linksInternos = document.querySelectorAll('[href^="#"]');
+console.log(linksInternos);
 
-// Retorne a largura da janela
-console.log(window.innerWidth);
+// Selecione o primeiro h2 dentro de .animais-descricao
+const primeiroH2 = document.querySelector(".animais-descricao h2");
+console.log(primeiroH2);
+
+// Selecione o último p do site
+const paragrafos = document.querySelectorAll("p");
+const ultimoParagrafo = paragrafos[paragrafos.length - 1];
+console.log(ultimoParagrafo);
+// ----------------------------------------------------------------------------------------------
