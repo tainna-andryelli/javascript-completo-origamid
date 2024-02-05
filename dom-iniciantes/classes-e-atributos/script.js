@@ -1,29 +1,28 @@
-// Elements Selection
-const animalSection = document.getElementById("animais");
+// Classes and Attributes
 
-// getElementsByClassName is dinamic, returns a HTMLCOLLECTION
-// querySelectorAll is static, returns a NODELIST
-const ancoras = document.getElementsByClassName("ancora");
-const ancs = document.querySelectorAll(".ancora");
+// ------ Exercises in Portuguese ---------
 
-// Exercises in Portuguese:
-// Retorne no console todas as imagens do site
-const imagens = document.getElementsByTagName("img");
-console.log(imagens);
+// Adicione a classe ativo a todos os itens do menu
+const itemsMenu = document.querySelectorAll(".menu a");
+itemsMenu.forEach((item) => {
+  item.classList.add("ativo");
+});
 
-// Retorne no console apenas as imagens que começaram com a palavra imagem
-const imagens2 = document.querySelectorAll('img[src ^= "../assets/imagem"]');
-console.log(imagens2);
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+itemsMenu.forEach((item) => {
+  if (item !== itemsMenu[0]) {
+    item.classList.remove("ativo");
+  }
+});
 
-// Selecione todos os links internos (onde o href começa com #)
-const linksInternos = document.querySelectorAll('[href^="#"]');
-console.log(linksInternos);
+// Verifique se as imagens possuem o atributo alt
+const imgs = document.querySelectorAll("img");
+imgs.forEach((img) => {
+  if (img.hasAttribute("alt")) {
+    console.log(`Image ${img.src} contains 'alt' attribute.`);
+  }
+});
 
-// Selecione o primeiro h2 dentro de .animais-descricao
-const primeiroH2 = document.querySelector(".animais-descricao h2");
-console.log(primeiroH2);
-
-// Selecione o último p do site
-const paragrafos = document.querySelectorAll("p");
-const ultimoParagrafo = paragrafos[paragrafos.length - 1];
-console.log(ultimoParagrafo);
+// Modifique o href do link externo no menu
+const externalLink = document.querySelector('a[href^="http"]');
+externalLink.setAttribute("href", "https://linkedin.com/in/tainna");
