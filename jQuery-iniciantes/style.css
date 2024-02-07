@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+body {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2 {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: azure;
+}
+
+.paragraph.active {
+  opacity: 0;
+}
+
+.span1,
+.span2 {
+  color: red;
+}
+
+.list li {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
