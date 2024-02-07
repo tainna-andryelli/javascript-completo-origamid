@@ -60,7 +60,7 @@ $(".list li").wrap("<span> span envolvs the li with wrap() </span>");
 $("ul li a").unwrap(); // removes the li's
 
 // Basic Events --------------------------------------
-// click() - adiciona uma função após o usuário clicar no target
+// click() - adds a function when users click on the target
 $("button").click(() => {
   $("button").text("Click");
 });
@@ -92,4 +92,17 @@ $(document).on("scroll", function () {
 // resize -> window
 $(window).on("resize", function () {
   $(".body-width").text($("body").width());
+});
+
+// Classes --------------------------------------
+// addClass(), removeClass(), toggleClass()
+
+$("section p").on("click", function () {
+  $(this).toggleClass("active");
+  let $cond = $(this).hasClass("active");
+  if ($cond) {
+    $(this).text("This color is black.");
+  } else {
+    $(this).text("This color is blue.");
+  }
 });

@@ -33,3 +33,23 @@ h2 {
   font-size: 24px;
   margin-bottom: 12px;
 }
+
+section p {
+  padding: 30px;
+  border-radius: 4px;
+  border: 2px solid blue;
+  text-align: center;
+  background-color: #0eeeef;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+section p:hover {
+  background-color: #0efeef;
+}
+
+section p.active {
+  background-color: black;
+  color: aliceblue;
+  border-color: gray;
+}
