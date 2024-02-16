@@ -61,8 +61,8 @@ $("ul li a").unwrap(); // removes the li's
 
 // Basic Events --------------------------------------
 // click() - adds a function when users click on the target
-$("button").click(() => {
-  $("button").text("Click");
+$(".hide").click(() => {
+  $(".hide").text("Click");
 });
 
 $("h1").on("click", function () {
@@ -105,4 +105,18 @@ $("section p").on("click", function () {
   } else {
     $(this).text("This color is blue.");
   }
+});
+
+// General Methods
+// attr(), removeAttr(), val() - use in input, select and textarea
+let href = $("a").attr("href"); // -> #link1
+$("a").attr("href", "#linke");
+$("a").attr("href"); // -> #linke
+
+$("a").removeAttr("href");
+$("a").attr("href"); // undefined
+
+$(".send-button").on("click", function () {
+  const nome = $("#name").val();
+  $("label").text("Your name is " + nome);
 });
