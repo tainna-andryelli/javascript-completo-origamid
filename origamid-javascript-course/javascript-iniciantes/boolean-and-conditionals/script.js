@@ -1,5 +1,3 @@
-// Hoisting
-// var x;
 var degree = false;
 
 if (degree) {
@@ -17,8 +15,7 @@ console.log(x); // undefined
 console.log(y); // -> 7
 // console.log(z); -> error: z is not defined
 
-// if exists
-var nickname = ""; // false
+var nickname = "";
 
 if (nickname) {
   console.log(nickname + " exists");
@@ -44,7 +41,6 @@ if ({}) - Empty Object
 
 !! - you can use this for to verify the boolean value*/
 
-// ---------------------------------------
 // Logics Operators
 // AND - if both values are true, returns the last check value. If any are false, it will return the first.
 console.log(true && true); // true
@@ -62,10 +58,7 @@ console.log("python" || "javascript"); // python
 console.log(5 - 5 || 5 + 5); // 10
 console.log(5 <= 7 || 3 < 6); // true
 
-// ---------------------------------------
-// Switch / case
 var favColor = "blue";
-
 switch (favColor) {
   case "blue":
     console.log("Your favorite color is blue");
