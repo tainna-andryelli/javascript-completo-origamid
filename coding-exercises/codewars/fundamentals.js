@@ -68,3 +68,31 @@ function areYouPlayingBanjo(name) {
     
   return name + " does not play banjo";
 }
+
+//Calculate BMI
+function bmi(weight, height) {
+  const bmi = weight / height**2;
+  if (bmi <= 18.5) {
+    return "Underweight";
+  } else if (bmi <= 25) {
+    return "Normal";
+  } else if(bmi <=30) {
+    return "Overweight";
+  }
+  return "Obese";
+}
+
+//Reduce but grow
+function grow(x){
+  let mult = 1; 
+  x.forEach((e)=> {
+    mult *= e;
+  });
+  
+  return mult;
+}
+
+//Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump
+};
