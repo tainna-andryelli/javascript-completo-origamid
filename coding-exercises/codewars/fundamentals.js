@@ -96,3 +96,13 @@ function grow(x){
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return mpg * fuelLeft >= distanceToPump
 };
+
+//reverses the string
+function solution(str) {
+  return str.split('').reverse().join('');
+}
+
+//make negative
+function makeNegative(num){
+  return num > 0 ? -num : num;
+}
