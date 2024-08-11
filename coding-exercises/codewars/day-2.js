@@ -82,6 +82,8 @@ function duplicateCount(text) {
   }
 
   twice = twice.filter(function(este, i) {
+    // console.log('Este elemento:', este, ' i:', i, twice.indexOf(este) === i);
+    // retorna toda a vez que 'este' elemento tiver a primeira ocorrência no index igual ao index dele
     return twice.indexOf(este) === i;
   });
 
